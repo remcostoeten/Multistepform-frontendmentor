@@ -1,4 +1,5 @@
 import { ReactElement } from 'React';
+
 export function useMultistepForm(steps: ReactElement[]) {
 	const [currentStepIndex, setCurrentStepIndex] = useState(0);
 
@@ -11,8 +12,8 @@ export function useMultistepForm(steps: ReactElement[]) {
 
 	function back() {
 		setCurrentStepIndex((i) => {
-			if (i <= 0) return i;
-			return i - 1;
+			if (i >= steps.length - 1) return i;
+			return i + 1;
 		});
 	}
 
@@ -29,6 +30,7 @@ export function useMultistepForm(steps: ReactElement[]) {
 		steps,
 	};
 }
+
 function useState(arg0: number): [any, any] {
 	throw new Error('Function not implemented.');
 }

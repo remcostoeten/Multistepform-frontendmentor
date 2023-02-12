@@ -1,11 +1,11 @@
 import { useMultistepForm } from '../useMultistepForm';
-const { steps, currentStepIndex } = [useMultistepForm];
+// const { steps, currentStepIndex } = [useMultistepForm];
 
 export default function Footer() {
 	return (
 		<>
 			<footer>
-				{currentStepIndex}aa
+				{/* {currentStepIndex}aa */}
 				<button className='btn btn--go-back' href='#'>
 					Go back
 				</button>
