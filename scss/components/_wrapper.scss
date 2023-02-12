@@ -1,67 +1,114 @@
 .container {
-    width: 768px;
-    margin: 0 auto;
+	width: 768px;
+	margin: 40px auto;
 }
 
 .wrapper {
-    display: flex;
-    padding: $spacing;
-    background: #fff;
-    color: $text-white;
-    border-radius: 6px;
+	display: flex;
+	padding: $spacing;
+	background: #fff;
+	color: $text-white;
+	border-radius: 6px;
 
-    &__inner {
-        display: flex;
-        padding: $spacing;
-    }
+	&__inner {
+		display: flex;
+	}
 
-    .intro {
-        background-color: $purplish-blue;
-        width: 30%;
-        padding: $spacing-xl;
-        border-radius: 6px;
+	.intro {
+		background-color: $purplish-blue;
+		width: 30%;
+		padding: $spacing-l;
+		border-radius: 6px;
 
-        &__step {
-            margin-bottom: $spacing-xl;
-        }
+		&__step {
+			margin-bottom: $spacing-xl;
+			position: relative;
+			padding-left: 40px;
 
-        h3 {
-            color: $pastel-text;
-        }
-        h2 {
-            color: $text-white;
-        }
-        &__inner {
+			&.active {
+				&:before {
+					background-color: #bee1fd;
+					border-color: transparent;
+					color: $blue;
+				}
+			}
 
-        }
+			&:before {
+				width: 25px;
+				height: 25px;
+				border-radius: 50%;
+				background: transparent;
+				border: 1px solid $color-white;
+				color: $text-white;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-weight: 700;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+			}
 
-    }
+			&:nth-child(1) {
+				&:before {
+					content: '1';
+				}
+			}
 
-    .info {
-        flex: 1;
-        padding: $spacing-xl * 2;
-        background: $color-white;
-        color: $grey-text;
+			&:nth-child(2) {
+				&:before {
+					content: '2';
+				}
+			}
 
-        h1 {
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: $spacing;
-        }
+			&:nth-child(3) {
+				&:before {
+					content: '3';
+				}
+			}
 
-        p {
-            color: $grey-text;
-            margin-bottom: 40px;
-        }
+			&:nth-child(4) {
+				&:before {
+					content: '4';
+				}
+			}
+		}
 
-        label {
-            color: $dark-blue;
-        }
+		h4 {
+			color: $pastel-text;
+			padding-bottom: 4px;
+			text-transform: uppercase;
+		}
 
-        input {
-            border-radius: 8px;
-            border: 1px solid $dark-blue;
-            padding: 8px;
-        }
-        }
-}   
+		h3 {
+			color: $text-white;
+			text-transform: uppercase;
+			font-weight: 500;
+		}
+		&__inner {
+		}
+	}
+
+	.info {
+		flex: 1;
+		padding: $spacing-xl $spacing-xl $spacing-xl $spacing-xl * 2;
+		background: $color-white;
+		color: $grey-text;
+
+		h1 {
+			font-size: 26px;
+			font-weight: 700;
+			margin-bottom: $spacing;
+		}
+
+		p {
+			color: $grey-text;
+			margin-bottom: 40px;
+		}
+
+		label {
+			color: $dark-blue;
+		}
+	}
+}

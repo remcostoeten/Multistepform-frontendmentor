@@ -144,60 +144,133 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background: #ECF5FF;
+  background: #ecf5ff;
+}
+
+.input-wrapper label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+.input-wrapper label input {
+  padding: 8px;
+  border-radius: 8px;
+  transition: 250ms ease all;
+  margin-top: 4px;
+  border: 2px solid #e1e1e3;
+}
+.input-wrapper label input:hover {
+  outline: none;
+  border-color: #8780b8;
+}
+.input-wrapper label input:focus {
+  outline: none;
+}
+
+footer {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.btn--go-back {
+  text-decoration: none;
+  font-weight: 500;
+  color: #4a3eff;
+}
+.btn--primary {
+  background: #4a3eff;
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 6px;
+  padding: 12px 24px;
+  border: none;
+  font-weight: 500;
 }
 
 .container {
   width: 768px;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
 .wrapper {
   display: flex;
   padding: 12px;
   background: #fff;
-  color: #F6FAFF;
+  color: #f6faff;
   border-radius: 6px;
 }
 .wrapper__inner {
   display: flex;
-  padding: 12px;
 }
 .wrapper .intro {
   background-color: hsl(243deg, 100%, 62%);
   width: 30%;
-  padding: 24px;
+  padding: 18px;
   border-radius: 6px;
 }
 .wrapper .intro__step {
   margin-bottom: 24px;
+  position: relative;
+  padding-left: 40px;
+}
+.wrapper .intro__step.active:before {
+  background-color: #bee1fd;
+  border-color: transparent;
+  color: #4a3eff;
+}
+.wrapper .intro__step:before {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  color: #f6faff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.wrapper .intro__step:nth-child(1):before {
+  content: "1";
+}
+.wrapper .intro__step:nth-child(2):before {
+  content: "2";
+}
+.wrapper .intro__step:nth-child(3):before {
+  content: "3";
+}
+.wrapper .intro__step:nth-child(4):before {
+  content: "4";
+}
+.wrapper .intro h4 {
+  color: #abafff;
+  padding-bottom: 4px;
+  text-transform: uppercase;
 }
 .wrapper .intro h3 {
-  color: #ABAFFF;
-}
-.wrapper .intro h2 {
-  color: #F6FAFF;
+  color: #f6faff;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 .wrapper .info {
   flex: 1;
-  padding: 48px;
+  padding: 24px 24px 24px 48px;
   background: hsl(0deg, 0%, 100%);
-  color: #A6A7AA;
+  color: #a6a7aa;
 }
 .wrapper .info h1 {
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 700;
   margin-bottom: 12px;
 }
 .wrapper .info p {
-  color: #A6A7AA;
+  color: #a6a7aa;
   margin-bottom: 40px;
 }
 .wrapper .info label {
   color: #002963;
-}
-.wrapper .info input {
-  border-radius: 8px;
-  border: 1px solid #002963;
-  padding: 8px;
 }/*# sourceMappingURL=styles.css.map */
