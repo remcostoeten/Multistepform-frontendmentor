@@ -1,9 +1,17 @@
-function App() {
+import Aside from './components/aside';
+import Main from './components/main';
+
+export default function App() {
 	return (
-		<div>
-			<form></form>
-		</div>
+		<>
+			<div className='container'>
+				<div className='wrapper'>
+					<div className='wrapper__inner'>
+						<Aside />
+						<Main />
+					</div>
+				</div>
+			</div>
+		</>
 	);
 }
-
-export default App;
