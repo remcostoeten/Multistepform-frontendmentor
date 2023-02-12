@@ -6,9 +6,7 @@ export default function Footer() {
 		<>
 			<footer>
 				{/* {currentStepIndex}aa */}
-				<button className='btn btn--go-back' href='#'>
-					Go back
-				</button>
+				<button className='btn btn--go-back'>Go back</button>
 				<button className='btn btn--primary'>Next step</button>
 			</footer>
 		</>
