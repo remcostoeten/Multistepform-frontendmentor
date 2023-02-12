@@ -8,8 +8,8 @@ export default function App() {
 				<div className='wrapper'>
 					<div className='wrapper__inner'>
 						<Aside />
-						<Main />
 					</div>
+					<Main />
 				</div>
 			</div>
 		</>
