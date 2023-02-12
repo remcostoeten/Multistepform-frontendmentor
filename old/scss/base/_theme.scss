@@ -2,6 +2,12 @@ body {
 	background: #ecf5ff;
 }
 
+form {
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+}
+
 .input-wrapper {
 	label {
 		display: flex;
