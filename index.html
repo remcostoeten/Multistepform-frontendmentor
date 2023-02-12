@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="/scss/styles.css" rel="stylesheet"/>
   
   <title>Frontend Mentor | Multi-step form</title>
 
@@ -17,34 +18,65 @@
 <body>
 
   <!-- Sidebar start -->
+  <div class="container">
+    <div class="wrapper">
+      <div class="wrapper__inner">
+      <aside class="intro">
+        <div class="intro__step">
 
-  Step 1
-  Your info
+         <h3>Step 1</h3>
+   <h2>       Your info</h2>
+</div>            
+        <div class="intro__step">
+          <h3>Step 2</h3>
+        <h2>  Select plan
+</h2>        </div>
+        <div class="intro__step">
 
-  Step 2
-  Select plan
+          <h3></h3>Step 3</h3>
+          <h2>Add-on</h2>s
+</div>
+        <div class="intro__step">
+          <h3>Step 4</h3>
+     <h2>     Summary</h2>
+</div>
+        </aside>
+      <main class="info">
+        <h1>Personal info</h1>
+        <p>
+        Please provide your name, email address, and phone number.
+        </p>
 
-  Step 3
-  Add-ons
+        <form>
+          <label>
+        Name
+        <input>
 
-  Step 4
-  Summary
+          </label>
+          <label for="mail">Email Address
+          <input placeholder="e.g. stephenking@lorem.com
+" id="mail"></label>
+
+</label>
+
+        </form>
+        <label for='phone'>Phone number
+        <input id="phone" placeholder="
+        e.g. +1 234 567 890
+        ">
+        </label>
+      </main>
+    </div>
+    </div>
+  </div>
+
+
 
   <!-- Sidebar end -->
 
   <!-- Step 1 start -->
 
-  Personal info
-  Please provide your name, email address, and phone number.
-
-  Name
-  e.g. Stephen King
-
-  Email Address
-  e.g. stephenking@lorem.com
-
-  Phone Number
-  e.g. +1 234 567 890
+ 
 
   Next Step
 
