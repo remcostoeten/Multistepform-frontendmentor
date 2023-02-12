@@ -167,6 +167,10 @@ body {
   outline: none;
 }
 
+form {
+  color: red;
+}
+
 footer {
   display: flex;
   align-content: center;

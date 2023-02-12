@@ -1,6 +1,8 @@
 import Aside from './components/aside';
 import Main from './components/main';
 export default function App() {
+	const currentStepIndex = 2;
+	const steps = 3;
 	return (
 		<>
 			<div className='container'>
@@ -8,7 +10,7 @@ export default function App() {
 					<div className='wrapper__inner'>
 						<Aside />
 					</div>
-					<Main />
+					<Main></Main>
 				</div>
 			</div>
 		</>
