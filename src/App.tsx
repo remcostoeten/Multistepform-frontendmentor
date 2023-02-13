@@ -1,3 +1,4 @@
+import Intro from './components/intro';
 import Aside from './components/aside';
 import Main from './components/main';
 export default function App() {
@@ -6,6 +7,7 @@ export default function App() {
 	return (
 		<>
 			<div className='container'>
+				<Intro />
 				<div className='wrapper'>
 					<div className='wrapper__inner first-step'>
 						<Aside />
