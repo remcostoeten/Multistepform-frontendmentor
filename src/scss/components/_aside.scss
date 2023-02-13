@@ -7,6 +7,8 @@
 	background-image: url('/assets/desktop-design-step-1.png');
 	background-position: bottom center;
 	background-repeat: no-repeat;
+	background-size: 105%;
+	overflow: hidden;
 
 	@include above-mobile {
 		min-width: 276px;
