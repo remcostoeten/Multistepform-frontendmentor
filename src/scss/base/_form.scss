@@ -1,3 +1,9 @@
-form {
-	color: red;
+.footer {
+	margin-top: $spacing-xl;
+
+	&__navigation {
+		display: flex;
+		justify-content: space-between;
+		flex: 1;
+	}
 }

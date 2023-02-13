@@ -147,12 +147,6 @@ body {
   background: #ecf5ff;
 }
 
-form {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-}
-
 .input-wrapper label {
   display: flex;
   flex-direction: column;
@@ -181,6 +175,7 @@ footer {
 
 .btn--go-back {
   text-decoration: none;
+  border: none;
   font-weight: 500;
   color: #4a3eff;
 }
@@ -207,10 +202,12 @@ footer {
 }
 .wrapper__inner {
   display: flex;
+  flex: 1;
 }
 .wrapper .intro {
+  display: flex;
+  flex: 1;
   background-color: hsl(243deg, 100%, 62%);
-  width: 30%;
   padding: 18px;
   border-radius: 6px;
 }

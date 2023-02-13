@@ -167,8 +167,13 @@ body {
   outline: none;
 }
 
-form {
-  color: red;
+.footer {
+  margin-top: 24px;
+}
+.footer__navigation {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
 }
 
 footer {
@@ -179,6 +184,7 @@ footer {
 
 .btn--go-back {
   text-decoration: none;
+  border: none;
   font-weight: 500;
   color: #4a3eff;
 }
@@ -208,7 +214,6 @@ footer {
 }
 .wrapper .intro {
   background-color: hsl(243deg, 100%, 62%);
-  width: 30%;
   padding: 18px;
   border-radius: 6px;
 }

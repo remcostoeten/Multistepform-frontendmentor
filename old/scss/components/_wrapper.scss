@@ -12,11 +12,13 @@
 
 	&__inner {
 		display: flex;
+		flex: 1;
 	}
 
 	.intro {
+		display: flex;
+		flex: 1;
 		background-color: $purplish-blue;
-		width: 30%;
 		padding: $spacing-l;
 		border-radius: 6px;
 

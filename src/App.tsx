@@ -7,10 +7,10 @@ export default function App() {
 		<>
 			<div className='container'>
 				<div className='wrapper'>
-					<div className='wrapper__inner'>
+					<div className='wrapper__inner first-step'>
 						<Aside />
 					</div>
-					<Main></Main>
+					<Main />
 				</div>
 			</div>
 		</>
