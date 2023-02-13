@@ -1,0 +1,17 @@
+.container {
+	width: 950px;
+	margin: 40px auto;
+}
+
+.wrapper {
+	display: flex;
+	padding: 30px;
+	background: #fff;
+	color: $text-white;
+	border-radius: 6px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+	&__inner {
+		display: flex;
+	}
+}

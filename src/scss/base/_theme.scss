@@ -2,27 +2,31 @@ body {
 	background: #ecf5ff;
 }
 
+input {
+	padding: $spacing-s $spacing;
+	border: 1px solid $grey-text;
+	border-radius: 8px;
+	transition: 250ms ease all;
+	margin-top: 4px;
+	border: 2px solid #e1e1e3;
+
+	&::placeholder {
+		color: #9c9ca6;
+	}
+
+	&:hover {
+		outline: none;
+		border-color: #8780b8;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
 .input-wrapper {
 	label {
 		display: flex;
 		flex-direction: column;
-		margin-bottom: $spacing;
-
-		input {
-			padding: 8px;
-			border-radius: 8px;
-			transition: 250ms ease all;
-			margin-top: 4px;
-			border: 2px solid #e1e1e3;
-
-			&:hover {
-				outline: none;
-				border-color: #8780b8;
-			}
-
-			&:focus {
-				outline: none;
-			}
-		}
 	}
 }

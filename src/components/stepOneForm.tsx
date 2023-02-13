@@ -4,10 +4,10 @@ export default function StepOneForm() {
 			<form>
 				<div className='input-wrapper'>
 					<label>Name</label>
-					<input type='text' placeholder='name' />
+					<input type='text' placeholder='e.g. Stephen King' />
 				</div>
 				<div className='input-wrapper'>
-					<label>email address</label>
+					<label>Email Address</label>
 					<input
 						type='email'
 						placeholder='e.g. stephenking@larem.com'

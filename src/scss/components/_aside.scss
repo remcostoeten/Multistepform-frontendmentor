@@ -1,0 +1,89 @@
+.intro {
+	display: flex;
+	flex: 1;
+	background-color: $purplish-blue;
+	padding: 40px $spacing-xl;
+	border-radius: 8px;
+	background-image: url('/assets/desktop-design-step-1.png');
+	background-position: bottom center;
+	background-repeat: no-repeat;
+
+	@include above-mobile {
+		min-width: 276px;
+	}
+
+	&__step {
+		margin-bottom: $spacing-xl;
+		position: relative;
+		padding-left: 48px;
+
+		&.active {
+			&:before {
+				background-color: #bee1fd;
+				border-color: transparent;
+				color: $blue;
+			}
+		}
+
+		&:before {
+			width: 32px;
+			height: 32px;
+			border-radius: 50%;
+			background: transparent;
+			border: 1px solid $pastel-text;
+			color: $pastel-text;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: 700;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		&:nth-child(1) {
+			&:before {
+				content: '1';
+			}
+		}
+
+		&:nth-child(2) {
+			&:before {
+				content: '2';
+			}
+		}
+
+		&:nth-child(3) {
+			&:before {
+				content: '3';
+			}
+		}
+
+		&:nth-child(4) {
+			&:before {
+				content: '4';
+			}
+		}
+	}
+
+	h4 {
+		color: $pastel-text;
+		text-transform: uppercase;
+		font-size: 14px;
+		line-height: 14px;
+		margin-bottom: 4px;
+	}
+
+	h3 {
+		color: $text-white;
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 16px;
+		letter-spacing: 0.15px;
+	}
+
+	&__inner {
+	}
+}
