@@ -1,4 +1,4 @@
-import { FormWrapper } from './formWrapper';
+import { FormWrapper } from './FormWrapper';
 
 export default function StepTwoForm() {
 	return (
@@ -11,7 +11,8 @@ export default function StepTwoForm() {
 					<div className='input-wrapper'>
 						<label>Name</label>
 						<input
-							requiredtype='text'
+							required
+							type='text'
 							placeholder='e.g. Stephen King'
 						/>
 					</div>

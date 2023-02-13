@@ -1,4 +1,4 @@
-import { FormWrapper } from './formWrapper';
+import { FormWrapper } from './FormWrapper';
 
 export default function StepOneForm() {
 	return (
@@ -10,7 +10,8 @@ export default function StepOneForm() {
 					<div className='input-wrapper'>
 						<label>Name</label>
 						<input
-							requiredtype='text'
+							required
+							type='text'
 							placeholder='e.g. Stephen King'
 						/>
 					</div>
