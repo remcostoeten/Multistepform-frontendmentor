@@ -1,3 +1,19 @@
+@include mobile {
+	footer {
+		position: fixed;
+		width: 100%;
+		background: $color-white;
+		left: 0;
+		bottom: 0;
+		padding: $spacing;
+
+		.btn--primary {
+			padding: $spacing-s $spacing;
+			font-size: 12px;
+			font-weight: 300;
+		}
+	}
+}
 footer {
 	// .btn {
 	// 	&--go-back {

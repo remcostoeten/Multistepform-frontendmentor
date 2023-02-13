@@ -5,7 +5,7 @@
 	color: $grey-text;
 
 	h1 {
-		font-size: 32pxpx;
+		font-size: 32px;
 		font-weight: 700;
 	}
 
@@ -20,7 +20,28 @@
 	}
 
 	input {
-		width: 100%;
+		max-width: 100%;
 		margin-bottom: $spacing;
+	}
+}
+
+@include mobile {
+	.info {
+		border-radius: 8px;
+		padding: 20px;
+		margin: -95px $spacing $spacing $spacing;
+		h1 {
+			font-size: 20px;
+			margin-bottom: $spacing-s;
+		}
+
+		p {
+			font-size: 14px;
+			margin-bottom: $spacing;
+		}
+
+		&__inner {
+			background: $color-white;
+		}
 	}
 }
