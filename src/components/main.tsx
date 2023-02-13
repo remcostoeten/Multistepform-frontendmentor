@@ -1,4 +1,5 @@
 import StepOneForm from './stepOneForm';
+import StepTwoForm from './StepTwoForm';
 import Footer from './Footer';
 
 export default function Main() {
@@ -6,12 +7,8 @@ export default function Main() {
 		<>
 			<main className='info'>
 				<div className='info__inner'>
-					<h1>Personal Info</h1>
-					<p>
-						Please provide your name, email address and phone
-						number.
-					</p>
 					<StepOneForm />
+					<StepTwoForm />
 				</div>
 				<Footer />
 			</main>

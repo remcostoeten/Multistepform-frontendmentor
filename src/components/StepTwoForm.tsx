@@ -1,12 +1,13 @@
 import { FormWrapper } from './formWrapper';
 
-export default function StepOneForm() {
+export default function StepTwoForm() {
 	return (
 		<>
 			<form>
 				<FormWrapper
-					title='Personal Info'
-					paragraph='Please provide your name, email address and phone number'>
+					title='Step Two'
+					paragraph='Please provide your name, email address and phone number.
+				'>
 					<div className='input-wrapper'>
 						<label>Name</label>
 						<input

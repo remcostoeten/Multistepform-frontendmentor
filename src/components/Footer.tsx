@@ -1,4 +1,6 @@
 import { useMultistepForm } from '../useMultistepForm';
+import StepTwoForm from './StepTwoForm';
+import StepOneForm from './stepOneForm';
 
 function Footer() {
 	const {
@@ -9,7 +11,7 @@ function Footer() {
 		next,
 		back,
 		isLastStep,
-	} = useMultistepForm([<div>One</div>, <div>Two</div>]);
+	} = useMultistepForm([<StepOneForm />, <StepTwoForm />]);
 	return (
 		<>
 			<footer className='footer'>
