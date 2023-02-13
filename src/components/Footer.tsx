@@ -1,11 +1,17 @@
 import { useMultistepForm } from '../useMultistepForm';
 
 function Footer() {
-	const { steps, currentStepIndex, step, isFirstStep, next, back } =
-		useMultistepForm([<div>One</div>, <div>Two</div>]);
+	const {
+		steps,
+		currentStepIndex,
+		step,
+		isFirstStep,
+		next,
+		back,
+		isLastStep,
+	} = useMultistepForm([<div>One</div>, <div>Two</div>]);
 	return (
 		<>
-			<div></div>
 			<footer className='footer'>
 				<form className='footer__navigation'>
 					{!isFirstStep && (
@@ -16,12 +22,14 @@ function Footer() {
 							Go back
 						</button>
 					)}
-					<button
-						onClick={next}
-						type='button'
-						className='btn btn--primary'>
-						Next step
-					</button>
+					{!isLastStep && (
+						<button
+							onClick={next}
+							type='button'
+							className='btn btn--primary'>
+							Next step
+						</button>
+					)}
 				</form>
 			</footer>
 		</>
