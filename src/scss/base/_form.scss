@@ -5,9 +5,9 @@
 		display: flex;
 		justify-content: space-between;
 		flex: 1;
-	}
 
-	&:only-child {
-		justify-content: end;
+		&:only-child {
+			justify-content: end;
+		}
 	}
 }

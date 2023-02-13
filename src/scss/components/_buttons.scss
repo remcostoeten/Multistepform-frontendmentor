@@ -1,4 +1,6 @@
 .btn {
+	padding: $spacing $spacing-xl;
+
 	&--go-back {
 		text-decoration: none;
 		border: none;
@@ -11,7 +13,6 @@
 		background: #03295a;
 		color: $color-white;
 		border-radius: 6px;
-		padding: $spacing $spacing-xl;
 		border: none;
 		font-weight: 500;
 	}
