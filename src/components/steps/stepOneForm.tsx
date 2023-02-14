@@ -15,13 +15,12 @@ export default function StepOneForm() {
 						number
 					</p>
 					<label>
-						{required}
 						Name
 						<input
 							required
 							type='text'
-							placeholder='e.g. Remco Stoeten'
-						/>
+							placeholder='e.g. Remco Stoeten'></input>
+						{required}
 					</label>
 				</div>
 				<div className='input-wrapper'>
@@ -45,6 +44,7 @@ export default function StepOneForm() {
 							placeholder='e.g. +3dd221 6 36 59 07 07'
 						/>
 					</label>
+					0{' '}
 				</div>
 				<StepNavigation
 					handler={function (arg0: 'next' | 'prev'): void {}}

@@ -1,10 +1,6 @@
 import React from 'react';
 import Main from './MainContent';
 
-function onAddButtonClick() {
-	console.log('aa');
-}
-
 function StepNavigation({
 	handler,
 	step,
@@ -26,7 +22,7 @@ function StepNavigation({
 				{step === 0 && (
 					<button
 						className='btn btn--primary'
-						onClick={() => handler('next')}>
+						onSubmit={() => handler('next')}>
 						Volgende
 					</button>
 				)}

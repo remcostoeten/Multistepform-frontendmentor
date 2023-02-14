@@ -2,6 +2,27 @@ body {
 	background: #ecf5ff;
 }
 
+.input-wrapper__required {
+	opacity: 0;
+}
+
+label:has(input::invalid) {
+	.input-wrapper__required {
+		opacity: 1;
+	}
+}
+
+input:invalid {
+	&:after {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		color: red;
+		background: yellow;
+		content: 'ddddd';
+	}
+}
+
 input {
 	padding: $spacing-s $spacing;
 	border: 1px solid $grey-text;
@@ -10,9 +31,18 @@ input {
 	margin-top: 4px;
 	color: #9c9ca6;
 	border: 2px solid #e1e1e3;
+	position: relative;
+
+	&:after {
+		position: absolute;
+	}
 
 	&:hover {
 		outline: none;
+	}
+
+	&:focus:invalid {
+		border-color: $alert;
 	}
 
 	&:focus {
@@ -25,7 +55,7 @@ input {
 	position: relative;
 
 	&__required {
-		color: red;
+		color: $alert;
 		position: absolute;
 		right: 0;
 		font-weight: 600;
