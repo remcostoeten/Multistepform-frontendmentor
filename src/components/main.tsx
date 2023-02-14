@@ -1,6 +1,6 @@
-import StepOneForm from './stepOneForm';
-import StepTwoForm from './StepTwoForm';
-import StepThreeForm from './StepThreeForm';
+import StepOneForm from './steps/stepOneForm';
+import StepTwoForm from './steps/StepTwoForm';
+import StepThreeForm from './steps/StepThreeForm';
 import Footer from './Footer';
 import { useState } from 'react';
 import StepNavigation from './StepNavigation';

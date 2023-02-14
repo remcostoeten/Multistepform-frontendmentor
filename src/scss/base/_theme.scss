@@ -8,18 +8,15 @@ input {
 	border-radius: 8px;
 	transition: 250ms ease all;
 	margin-top: 4px;
+	color: #9c9ca6;
 	border: 2px solid #e1e1e3;
-
-	&::placeholder {
-		color: #9c9ca6;
-	}
 
 	&:hover {
 		outline: none;
-		border-color: #8780b8;
 	}
 
 	&:focus {
+		border-color: $pastel-text;
 		outline: none;
 	}
 }

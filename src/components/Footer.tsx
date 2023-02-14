@@ -1,6 +1,6 @@
 import { useMultistepForm } from '../useMultistepForm';
-import StepTwoForm from './StepTwoForm';
-import StepOneForm from './stepOneForm';
+import StepTwoForm from './steps/StepTwoForm';
+import StepOneForm from './steps/stepOneForm';
 
 function Footer() {
 	const {

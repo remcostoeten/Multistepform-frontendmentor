@@ -1,6 +1,10 @@
 import React from 'react';
 import Main from './Main';
 
+function onAddButtonClick() {
+	console.log('aa');
+}
+
 function StepNavigation({
 	handler,
 	step,
@@ -9,13 +13,26 @@ function StepNavigation({
 	step: number;
 }) {
 	return (
-		<div>
-			{' '}
-			{!(step === 0) && (
-				<button onClick={() => handler('prev')}>Previous</button>
-			)}
-			<button onClick={() => handler('next')}>Volgende</button>{' '}
-		</div>
+		<footer className='footer'>
+			<div className='footer__navigation'>
+				{' '}
+				{!(step === 0) && (
+					<button
+						className='btn btn--primary'
+						onClick={() => handler('prev')}>
+						Previous
+					</button>
+				)}
+				<button
+					className='btn btn--go-back'
+					onClick={() => handler('next')}>
+					Volgende
+				</button>{' '}
+				<button type='button' onClick={onAddButtonClick}>
+					Submit
+				</button>
+			</div>
+		</footer>
 	);
 }
 
