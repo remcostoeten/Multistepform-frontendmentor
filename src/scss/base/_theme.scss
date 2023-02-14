@@ -22,6 +22,16 @@ input {
 }
 
 .input-wrapper {
+	position: relative;
+
+	&__required {
+		color: red;
+		position: absolute;
+		right: 0;
+		font-weight: 600;
+		scale: 0.9;
+	}
+
 	label {
 		display: flex;
 		flex-direction: column;

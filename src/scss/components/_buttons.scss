@@ -1,14 +1,6 @@
 .btn {
 	padding: $spacing $spacing-xl;
 
-	&--go-back {
-		text-decoration: none;
-		border: none;
-		font-weight: 700;
-		color: $grey-text;
-		background: none;
-	}
-
 	&--primary {
 		background: #03295a;
 		color: $color-white;
@@ -16,4 +8,13 @@
 		border: none;
 		font-weight: 500;
 	}
+}
+
+.btn--back {
+	text-decoration: none;
+	border: none;
+	font-weight: 700;
+	color: $grey-text;
+	padding: $spacing $spacing-xl;
+	background: none;
 }

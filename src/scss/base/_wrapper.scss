@@ -16,6 +16,12 @@
 	}
 }
 
+@include above-mobile {
+	.wrapper {
+		min-height: 575px;
+	}
+}
+
 @include mobile {
 	.container {
 		margin: 0;

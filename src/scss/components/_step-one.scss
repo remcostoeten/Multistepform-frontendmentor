@@ -2,7 +2,6 @@
 	flex: 1;
 	padding: $spacing-xl $spacing-xl $spacing-xl 75px;
 	background: $color-white;
-	color: $grey-text;
 
 	h1 {
 		font-size: 32px;
@@ -22,6 +21,10 @@
 	input {
 		max-width: 100%;
 		margin-bottom: $spacing;
+
+		&::placeholder {
+			color: $grey-text;
+		}
 	}
 }
 

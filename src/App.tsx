@@ -1,6 +1,6 @@
 import Intro from './components/Intro';
 import Aside from './components/Aside';
-import Main from './components/Main';
+import Main from './components/MainContent';
 export default function App() {
 	const currentStepIndex = 2;
 	const steps = 3;

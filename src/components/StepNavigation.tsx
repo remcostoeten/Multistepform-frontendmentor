@@ -1,5 +1,5 @@
 import React from 'react';
-import Main from './Main';
+import Main from './MainContent';
 
 function onAddButtonClick() {
 	console.log('aa');
@@ -18,19 +18,18 @@ function StepNavigation({
 				{' '}
 				{!(step === 0) && (
 					<button
-						className='btn btn--primary'
+						className='btn--back'
 						onClick={() => handler('prev')}>
 						Previous
 					</button>
 				)}
-				<button
-					className='btn btn--go-back'
-					onClick={() => handler('next')}>
-					Volgende
-				</button>{' '}
-				<button type='button' onClick={onAddButtonClick}>
-					Submit
-				</button>
+				{step === 0 && (
+					<button
+						className='btn btn--primary'
+						onClick={() => handler('next')}>
+						Volgende
+					</button>
+				)}
 			</div>
 		</footer>
 	);

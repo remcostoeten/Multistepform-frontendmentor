@@ -19,15 +19,15 @@ export default function Main() {
 
 		if (direction === 'prev' && !(step <= 0)) {
 			setStep(step - 1);
+			console.log('test');
 		}
 	};
 
 	return (
 		<>
 			<main className='info'>
-				<div className='info__inner'>{steps[step]}</div>
+				<div className='info__inner'>{steps[step]}dd</div>
 				{/* <Footer /> */}
-				<StepNavigation step={step} handler={stepHandler} />
 			</main>
 		</>
 	);
