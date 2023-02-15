@@ -1,4 +1,3 @@
-import Intro from './components/Intro';
 import Sidebar from './components/Sidebar';
 import Main from './components/MainContent';
 export default function App() {
@@ -7,7 +6,6 @@ export default function App() {
 	return (
 		<>
 			<div className='container'>
-				<Intro />
 				<div className='wrapper'>
 					<div className='wrapper__inner first-step'>
 						<Sidebar />
