@@ -2,15 +2,6 @@ body {
 	background: #ecf5ff;
 }
 
-.input-wrapper__required {
-	opacity: 0;
-}
-
-label:has(input::invalid) {
-	.input-wrapper__required {
-		opacity: 1;
-	}
-}
 
 input:invalid {
 	&:after {
