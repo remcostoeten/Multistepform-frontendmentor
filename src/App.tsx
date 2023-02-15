@@ -1,5 +1,5 @@
 import Intro from './components/Intro';
-import Aside from './components/Aside';
+import Sidebar from './components/Sidebar';
 import Main from './components/MainContent';
 export default function App() {
 	const currentStepIndex = 2;
@@ -10,7 +10,7 @@ export default function App() {
 				<Intro />
 				<div className='wrapper'>
 					<div className='wrapper__inner first-step'>
-						<Aside />
+						<Sidebar />
 					</div>
 					<Main />
 				</div>

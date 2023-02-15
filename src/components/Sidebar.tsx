@@ -1,4 +1,4 @@
-export default function Aside() {
+export default function Sidebar() {
 	return (
 		<>
 			<aside className='intro'>
